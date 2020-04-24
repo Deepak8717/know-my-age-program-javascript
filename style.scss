@@ -1,0 +1,38 @@
+$background-color:pink;
+$bg-hover :#6D7993;
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $background-color;
+    flex-direction: column;
+}
+button{
+    width:100px;
+    height:50px;
+    background:black;
+    color:white;
+    border:0;
+    border-radius: 50px;
+    font-weight: 700;
+    outline: none;
+    transition: all .1s;
+    &::-moz-focus-inner{
+        border:0;
+    }
+    &:hover{
+        background:$bg-hover;
+        cursor: pointer;
+        box-shadow: 3px 3px 3px black;
+        
+    }
+    &:focus:active{
+        box-shadow: none;
+       
+    }
+}
+
+p{
+    font-size: 18px;
+}
